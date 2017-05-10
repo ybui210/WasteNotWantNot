@@ -1,0 +1,40 @@
+<head>
+	<title>WNWN :: Sign Up</title>
+</head>
+<body>
+	<div class="container">
+		<!--Logo-->
+		<div class="col-xs-12 img" >
+      <%= image_tag("logo.png", alt: "Waste Not Want Not",id: "logo_big") %>
+		</div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <%= form_for(@user) do |f| %>
+          <%= f.label :name %>
+          <%= f.text_field :name %>
+
+          <%= f.label :email %>
+          <%= f.email_field :email %>
+
+          <%= f.label :password %>
+          <%= f.password_field :password %>
+
+          <%= f.label :password_confirmation, "Confirmation" %>
+          <%= f.password_field :password_confirmation %>
+
+          <%= f.submit "Create my account", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+
+
+		<!--link back to sign in-->
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2 center">Already A Member?
+				<a href="index.html">click here</a>
+			</div>
+		</div>
+		<div class="col-xs-12"><br></br></div>
+	</div>
+
+</body>
