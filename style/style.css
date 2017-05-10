@@ -1,14 +1,28 @@
 .img {
 	display: block;
 	text-align: center;
-	
+	vertical-align: middle;
+}
+.left {
+	text-align: left;
 }
 
-body {
-	background-color: black;
+.right {
+	text-align: right;
 }
 
-.center-align {
+.under{
+	font-weight: underline;
+}
+
+.center {
 	text-align: center;
-	color: white;
+}
+
+.btn-xl {
+	margin: auto;
+	font-weight: bold;
+    width: 80%;
+	background-color: #bf80ff;
+    border-radius: 10px;
 }
