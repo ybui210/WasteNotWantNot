@@ -26,3 +26,25 @@
 	background-color: #bf80ff;
     border-radius: 10px;
 }
+
+.logo {
+	height: 100%;
+	width: 15%;
+	vertical-align: bottom;
+}
+
+.header {
+	background-color: #bf80ff;
+	height: 10%;
+}
+
+.icon {
+	height: 40px;
+	width: 40px;
+	vertical-align: bottom;
+}
+
+table, th, td {
+	text-align: center; 
+    border: 1px solid gray;
+}
