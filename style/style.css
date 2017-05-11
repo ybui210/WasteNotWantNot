@@ -43,3 +43,8 @@
 	width: 40px;
 	vertical-align: bottom;
 }
+
+table, th, td {
+	text-align: center; 
+    border: 1px solid gray;
+}
