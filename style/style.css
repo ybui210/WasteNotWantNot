@@ -20,9 +20,14 @@
 }
 
 .btn-xl {
+
 	margin: auto;
 	font-weight: bold;
     width: 80%;
 	background-color: #bf80ff;
     border-radius: 10px;
+}
+
+.chkpwd {
+	visibility: hidden;
 }
