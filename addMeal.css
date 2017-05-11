@@ -1,8 +1,10 @@
 body {
-    color: purple;
+    color: mediumpurple;
 }
 #title h1, h3{
+    color: purple;
     text-align: center;
+    font-weight: bold;
     padding:50px 0 50px 0;
 }
 #addMealForm{
@@ -17,7 +19,7 @@ body {
     font-weight: bold;
 }
 .save {
-    background-color: mediumpurple;
+    background-color: purple;
     color: white;
     font-weight: bold;
 }
