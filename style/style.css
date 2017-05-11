@@ -26,3 +26,8 @@
 	background-color: #bf80ff;
     border-radius: 10px;
 }
+
+table, th, td {
+	text-align: center; 
+    border: 1px solid gray;
+}
