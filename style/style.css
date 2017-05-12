@@ -33,11 +33,6 @@
 	vertical-align: bottom;
 }
 
-.header {
-	background-color: #bf80ff;
-	height: 10%;
-}
-
 .icon {
 	height: 40px;
 	width: 40px;
@@ -52,7 +47,7 @@ table, th, td {
 	font-weight: bold;
 	font-size: 30px;
 	font-family: sans-serif;
-	color: #9900cc;
+	color: #470daa;
 	text-align: center;
 }
 
