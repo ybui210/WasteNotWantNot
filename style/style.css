@@ -48,3 +48,15 @@ table, th, td {
 	text-align: center; 
     border: 1px solid gray;
 }
+
+.title {
+	font-weight: bold;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: #9900cc;
+	text-align: center;
+}
+
+.foodnotes{
+	width: 100%;
+}
