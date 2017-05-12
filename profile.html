@@ -14,46 +14,56 @@
 </head>
 
 <body>
-	
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
-				</button>
-				<a class="navbar-brand" href="home.html">Waste Not Want Not</a>
+	<div class="container">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="home.html">Waste Not Want Not</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+					<li class="active"><a href="home.html">Home</a></li>
+					
+					<li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+					<li><a href="planner.html"><span class="glyphicon glyphicon-calendar"></span> Meal Planner</a></li>
+					<li><a href="achievement.html"><span class="glyphicon glyphicon-queen"></span> Achievements</a></li>
+					
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+					<li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-				<li class="active"><a href="home.html">Home</a></li>
-				
-				<li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-				<li><a href="planner.html"><span class="glyphicon glyphicon-calendar"></span> Meal Planner</a></li>
-				<li><a href="achievement.html"><span class="glyphicon glyphicon-queen"></span> Achievements</a></li>
-				
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-				<li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+		</nav>
 
 		<div class="row title">
 			<h1> My Profile</h1>
 		</div>
+
 		<div class="img">
 			<img src="img/unknown.png" alt="profile picture"/>
 		</div>
 		<br>
-		<div class="center-align">
-			<p>Profile Name: </p>
-			<p>Email Address: </p>
+		<div class="col-xs-12">
+			<table class="table table-hover table-striped">
+					<tr>
+						<td>Username</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Email Address</td>
+						<td></td>
+					</tr>	
+			</table>
 		</div>
 		<div class="center">
 			<h2>Achievements!</h2>
 		</div>
+
 	</div>
 </body>

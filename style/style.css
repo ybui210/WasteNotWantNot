@@ -22,7 +22,7 @@
 .btn-xl {
 	margin: auto;
 	font-weight: bold;
-    width: 80%;
+    width: 100%;
 	background-color: #bf80ff;
     border-radius: 10px;
 }
@@ -46,7 +46,6 @@
 
 table, th, td {
 	text-align: center; 
-    border: 1px solid gray;
 }
 
 .title {
@@ -60,3 +59,4 @@ table, th, td {
 .foodnotes{
 	width: 100%;
 }
+
