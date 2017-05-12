@@ -29,24 +29,29 @@
 			    	<input type="email" class="form-control" id="email" placeholder="Enter email" 	name="email" required>
 			    </div>
 			    <!--password-->
-			    <div class="form-group" method="post">
-			      	<label for="pwd">Password:</label>
+			    <div class="form-group">
+			      	<label for="password">Password:</label>
 			      	<input type="password" class="form-control" id="password" placeholder="Enter password" name="pwd" required>
+
 			    </div>
 			    <!--comforimed-->
 			    <div class="form-group">
-			      	<label for="pwd">Comfirm Password:</label>
-			      	<input type="password" class="form-control" id="comfirm_password" placeholder="Re-Enter password" required>
+			      	<label for="confirm_password">Comfirm Password:</label>
+			      	<input type="password" class="form-control" id="confirm_password" placeholder="Re-Enter password" required>
+			      	<div id="message" class="col-xs-12"></div>
 			    </div>
 				<script>
 					$('#password, #confirm_password').on('keyup', function () {
   						if ($('#password').val() == $('#confirm_password').val()) {
+  							
     						$('#message').html('Matching').css('color', 'green');
   						} else {
+							
     						$('#message').html('Not Matching').css('color', 'red');
   						}
 					});
 				</script>
+				
 			    <button type="submit" class='btn btn-xl btn-block'>Submit</button>		    
 		</form>
 		<!--link back to sign in-->
@@ -56,8 +61,6 @@
 			</div>
 		</div>
 		<br/>
-		<div id="message">
-		</div>
 		<div class="col-xs-12">
 		<a href="displaytable.php">display database</a>
 		</div>

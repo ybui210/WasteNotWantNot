@@ -28,6 +28,29 @@
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
 .chkpwd {
 	visibility: hidden;
+=======
+.logo {
+	height: 100%;
+	width: 15%;
+	vertical-align: bottom;
+}
+
+.header {
+	background-color: #bf80ff;
+	height: 10%;
+}
+
+.icon {
+	height: 40px;
+	width: 40px;
+	vertical-align: bottom;
+}
+
+table, th, td {
+	text-align: center; 
+    border: 1px solid gray;
+>>>>>>> b03959467786456e4ef4da57feb4ee055e6e5e1e
 }

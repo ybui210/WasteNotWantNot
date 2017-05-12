@@ -1,0 +1,13 @@
+img {
+    width: 300px;
+    height: 280px;
+    display: block;
+    margin: auto;
+}
+head, body, .btn{
+    text-align: center;
+    font-weight: bold;
+}
+.glyphicon {
+    right: 10px;
+}
