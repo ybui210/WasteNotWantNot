@@ -20,7 +20,6 @@
 }
 
 .btn-xl {
-
 	margin: auto;
 	font-weight: bold;
     width: 100%;
@@ -28,11 +27,15 @@
     border-radius: 10px;
 }
 
-
 .logo {
 	height: 100%;
 	width: 15%;
 	vertical-align: bottom;
+}
+
+.header {
+	background-color: #bf80ff;
+	height: 10%;
 }
 
 .icon {
@@ -49,7 +52,7 @@ table, th, td {
 	font-weight: bold;
 	font-size: 30px;
 	font-family: sans-serif;
-	color: #470daa;
+	color: #9900cc;
 	text-align: center;
 }
 
