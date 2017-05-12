@@ -23,11 +23,42 @@
 
 	margin: auto;
 	font-weight: bold;
-    width: 80%;
+    width: 100%;
 	background-color: #bf80ff;
     border-radius: 10px;
 }
 
-.chkpwd {
-	visibility: hidden;
+
+.logo {
+	height: 100%;
+	width: 15%;
+	vertical-align: bottom;
 }
+
+.header {
+	background-color: #bf80ff;
+	height: 10%;
+}
+
+.icon {
+	height: 40px;
+	width: 40px;
+	vertical-align: bottom;
+}
+
+table, th, td {
+	text-align: center; 
+}
+
+.title {
+	font-weight: bold;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: #9900cc;
+	text-align: center;
+}
+
+.foodnotes{
+	width: 100%;
+}
+
