@@ -53,6 +53,7 @@
     <!-- form -->
     <div id = "addMealForm" class = "container-fluid">
         <form class="form-horizontal" method = "post">
+		
             <!-- Dish Name-->
             <div class = "form-goup">
                 <div class = "col-sm-2"></div>
@@ -67,6 +68,7 @@
                 </div>  
             </div>
             <div class="col-xs-12"><br></div>
+			
             <!-- Ingredient -->
             <div class = "form-goup">
                 <div class = "col-sm-2"></div>             
@@ -82,10 +84,10 @@
             <!-- Serving Amount -->
             <div class = "form-group">
                 <div class = "col-sm-2"></div>
-                <div class = "col-sm-4">
-                    <label for = "serveAmount">Serving Amount (in person) :</label>
+                <div class = "col-sm-3">
+                    <label for = "serveAmount">Serving Amount (# of people) :</label>
                 </div>
-                 <div class = "col-sm-2">   
+                 <div class = "col-sm-5">   
                     <input type = "number" id = "servingAmount" name = "ServingAmount" min = "1" max = "15" step ="1"  class = "form-control"/>
                  </div>
             </div>
@@ -93,14 +95,18 @@
         </form>
     </div>
     
-    <!-- Cancel Button -->
+    <!--Buttons-->
     <div id = "button" class = "container-fluid">
         <div class = "row">
             <div class = "col-sm-3"></div>
+			
+			<!-- Cancel Button -->
             <div class = "col-xs-6 col-sm-3">
                 <button type = "button" class = "btn cancel btn-lg visible-lg visible-md">Cancel</button>
                 <button type = "button" class = "btn cancel btn-md hidden-lg hidden-md">Cancel</button>
             </div>
+			
+			<!-- Save Button -->
             <div class = "col-xs-6 col-sm-3">
                 <button type = "button" class = "btn save btn-lg visible-lg visible-md">Save</button>
                 <button type = "button" class = "btn save btn-md hidden-lg hidden-md">Save</button>
@@ -108,7 +114,7 @@
         </div>
     </div>
     
-    <!-- Save Button -->
+    
     
 </body>
 
