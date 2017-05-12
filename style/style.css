@@ -20,12 +20,14 @@
 }
 
 .btn-xl {
+
 	margin: auto;
 	font-weight: bold;
     width: 100%;
 	background-color: #bf80ff;
     border-radius: 10px;
 }
+
 
 .logo {
 	height: 100%;
