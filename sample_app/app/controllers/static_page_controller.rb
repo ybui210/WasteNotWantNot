@@ -10,4 +10,7 @@ class StaticPageController < ApplicationController
 
   def contact
   end
+
+  def affiliated
+  end
 end
