@@ -1,0 +1,31 @@
+.glyphicon {
+	font-size: 30px;
+	position: center;
+	color: #b998f2;
+}
+
+#date_slection {
+	width: 200px;
+	
+}
+
+#date_icon {
+	text-align: right;
+}
+
+.leftSide {
+	text-align: right;
+}
+
+#left-button {
+	text-align: right;
+}
+
+#right-button {
+	text-align: left;
+}
+
+p {
+	color: #470daa;
+	font-family: bold;
+}
