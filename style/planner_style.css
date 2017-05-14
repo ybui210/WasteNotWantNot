@@ -1,0 +1,32 @@
+.glyphicon {
+	font-size: 30px;
+	position: center;
+	color: #b998f2;
+}
+
+.glyphicon-calendar {
+	font-size: 20px;
+}
+
+.date_selection {
+	height: 20px;
+}
+
+.leftSide {
+	text-align: right;
+}
+
+#left-button {
+	text-align: right;
+}
+
+#right-button {
+	text-align: left;
+}
+
+.label-text {
+	font-size: 13px;
+	color: #470daa;
+	font-weight: bold;
+	display: block;
+}
