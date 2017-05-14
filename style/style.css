@@ -56,3 +56,62 @@ table, th, td {
 	width: 100%;
 }
 
+/* Button */
+#cancel button{
+    background: orange;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#save button{
+    background: #bf80ff;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#delete button{
+    background: #b30000;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#calender {
+    text-align: left;
+    padding-left: 30px;
+}
+/* Planner.html */
+#mainForm{
+    text-align: center;
+    font-weight: bold;
+    color: #470daa;
+}
+
+/* editMeal.html, addMeal.html */
+#editMealForm, #addMealForm, #achievementForm{
+    text-align:left;
+    font-weight: bold;
+    color: #470daa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
