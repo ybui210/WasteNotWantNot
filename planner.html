@@ -48,25 +48,22 @@
         <form class="form-horizonal" method="post">
             <!-- Calender -->
             <div class="row">
-                <div class="col-xs-6" id="date_icon">
-                    <p class="glyphicon glyphicon-calendar"></p>
+                <div class="form-group col-xs-8 col-xs-offset-4">
+                    <label for="date" class="glyphicon glyphicon-calendar"></label>
+                    <input type="date" name="user_date" class=" date_selection" id="date"/>
                 </div>
-                <div class="col-xs-4" id="date_selection">
-                    <input type="date" name="user_date"/>
-                </div>
-            </div>
-            <div class="col-xs-12"><br/></div>   
+            </div> 
             <!-- Breakfast-->
             <div class="meal row">
                 <div class="col-xs-10 col-xs-offset-1">
                     <div class="col-xs-4 leftSide">
-                        <p>Breakfast</p>
+                        <p class="label-text">Breakfast</p>
                         <a href="addMeal.html">
                         <span class="glyphicon glyphicon-plus-sign"></span>
                         </a>
                     </div>
                     <div class="col-xs-8">
-                        <p>Completely Eaten?</p>
+                        <p class="label-text">Completely Eaten?</p>
                         <input type = "text" id = "eatPercent" name = "EatPercent" list = "percentList" class = "form-control"/>
                         <datalist id = "percentList">
                             <option value = "100%">
@@ -79,19 +76,18 @@
                     </div>
                 </div>
             </div>
-
+            <br/>
             <!-- Lunch -->
             <div class="meal row">
                 <div class="col-xs-10 col-xs-offset-1">
-
-                <div class="col-xs-4 leftSide">
-                    <p>Lunch</p>
-                    <a href="addMeal.html">
+                    <div class="col-xs-4 leftSide">
+                        <p class="label-text">Lunch</p>
+                        <a href="addMeal.html">
                         <span class="glyphicon glyphicon-plus-sign"></span>
-                    </a>
-                </div>
-                <div class="col-xs-8">
-                        <p>Completely Eaten?</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="label-text">Completely Eaten?</p>
                         <input type = "text" id = "eatPercent" name = "EatPercent" list = "percentList" class = "form-control"/>
                         <datalist id = "percentList">
                             <option value = "100%">
@@ -101,22 +97,22 @@
                             <option value = "20%">
                             <option value = "0%">
                         </datalist>
-                </div>
+                    </div>
                 </div>
             </div>
+            <br/>
 
             <!-- Dinner -->
             <div class="meal row">
                 <div class="col-xs-10 col-xs-offset-1">
-
-                <div class="col-xs-4 leftSide">
-                    <p>Dinnner</p>
-                    <a href="addMeal.html">
+                    <div class="col-xs-4 leftSide">
+                        <p class="label-text">Dinner</p>
+                        <a href="addMeal.html">
                         <span class="glyphicon glyphicon-plus-sign"></span>
-                    </a>
-                </div>
-                <div class="col-xs-8">
-                        <p>Completely Eaten?</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="label-text">Completely Eaten?</p>
                         <input type = "text" id = "eatPercent" name = "EatPercent" list = "percentList" class = "form-control"/>
                         <datalist id = "percentList">
                             <option value = "100%">
@@ -126,11 +122,11 @@
                             <option value = "20%">
                             <option value = "0%">
                         </datalist>
-                </div>
+                    </div>
                 </div>
             </div>
-        
-            <div class="col-xs-12"><br/><br/><br/><br/></div>
+            <br/>
+
     <!-- Button -->
             <div class="row">
                 <div class="col-xs-4" id="left-button">

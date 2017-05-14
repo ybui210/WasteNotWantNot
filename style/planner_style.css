@@ -4,13 +4,12 @@
 	color: #b998f2;
 }
 
-#date_slection {
-	width: 200px;
-	
+.glyphicon-calendar {
+	font-size: 20px;
 }
 
-#date_icon {
-	text-align: right;
+.date_selection {
+	height: 20px;
 }
 
 .leftSide {
@@ -25,7 +24,9 @@
 	text-align: left;
 }
 
-p {
+.label-text {
+	font-size: 13px;
 	color: #470daa;
-	font-family: bold;
+	font-weight: bold;
+	display: block;
 }
