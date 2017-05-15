@@ -55,7 +55,7 @@
 }
 
 .panel-default>.panel-heading {
-	background-color: #dbb2ff;
+	background-color: #d699ff;
 }
 
 input {
@@ -70,3 +70,13 @@ input {
     color: #470daa;
 }
 
+.completeEaten {
+	visibility: hidden;
+	text-align: right;
+
+}
+
+.select {
+	border-radius: 5px;
+	border-color: #470daa;
+}
