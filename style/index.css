@@ -1,0 +1,70 @@
+body{
+    width: 100%;
+    margin: 0;
+
+}
+.img1, .img2, .img3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.img1 {
+  background-image: url("../img/food.jpg");
+  min-height: 300px;
+}
+
+.img2 {
+  background-image: url("../img/wnwn.png");
+  min-height: 400px;
+}
+
+.img3 {
+  background-image: url("../img/food.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  font-size: 3vw;
+  letter-spacing: 10px;
+  vertical-align: middle;
+}
+
+h3 {
+  text-transform: uppercase;
+  font: 30px "Lato", sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+.description{
+    color: #777;
+    background-color:white;
+    text-align:center;
+    text-align: justify;
+    text-align:center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .img1, .img2, .img3 {
+        background-attachment: scroll;
+    }
+}
