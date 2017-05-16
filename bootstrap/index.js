@@ -36,7 +36,7 @@ function leftovers() {
 		var object = { // set this objects type 
 			type: t,
 			// set x randomly but at least 1/10 off the canvas edges 
-			x: Math.random() * (canvas.width),
+			x: Math.random() * (canvas.width)-15,
 			// set y to start on the line where objects are spawned 
 			y: spawnLineY,
 		} // add the new object to the objects[] array 
