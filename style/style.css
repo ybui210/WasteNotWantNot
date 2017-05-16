@@ -116,8 +116,42 @@ table, th, td {
     color: #470daa;
 }
 
+/*home page css */
 
+.home_nav {
+    height: 45px;
+    border-left: 30px solid #4d1e89;
+    border-radius: 100px;
+    background: #caacef;
+    font-size: 20px;
+    font-family: bold;
+    text-align: left;
+    
+}
 
+.home_img {
+    display: block;
+    margin: auto;
+}
+
+.home_glyphicon {
+    font-size: 20px;
+    color: #4d1e89;
+}
+
+.glyphicon-star-empty {
+    font-size: 25px;
+}
+
+.home_button {
+    color: black;
+}
+
+.home_esterEgg1 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
 
 
 
