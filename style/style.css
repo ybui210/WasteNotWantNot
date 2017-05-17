@@ -193,7 +193,7 @@ body{
 }
 .index_img1, .index_img2, .index_img3 {
   position: relative;
-  opacity: 0.65;
+  /*opacity: 0.9;*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -243,7 +243,7 @@ h3 {
 }
 
 .index_description{
-    color: #777;
+    color: #39393a;
     background-color:white;
     text-align:center;
     text-align: justify;
