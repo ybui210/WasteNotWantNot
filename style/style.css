@@ -147,10 +147,14 @@ table, th, td {
     color: black;
 }
 
-.home_esterEgg1 {
+.home_easterEgg1 {
     position: fixed;
-    bottom: 0px;
+	bottom: 0px;
     left: 0px;
+}
+
+.home_easterEgg_icon {
+	color: green;
 }
 
 /* add meal style */
