@@ -99,19 +99,237 @@ table, th, td {
     color: #470daa;
 }
 
+#mealPD {
+    border-radius: 5px;
+    border-color:  #470daa;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+}
 
 
+.label {
+    font-weight: bold;
+    color: #470daa;
+}
 
+/*home page css */
 
+.home_nav {
+    height: 45px;
+    border-left: 30px solid #4d1e89;
+    border-radius: 100px;
+    background: #caacef;
+    font-size: 20px;
+    font-family: bold;
+    text-align: left;
+    
+}
 
+.home_img {
+    display: block;
+    margin: auto;
+}
 
+.home_glyphicon {
+    font-size: 20px;
+    color: #4d1e89;
+}
 
+.glyphicon-star-empty {
+    font-size: 25px;
+}
 
+.home_button {
+    color: black;
+}
 
+.home_esterEgg1 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
 
+/* add meal style */
 
+.addMeal_body {
+    color: mediumpurple;
+}
+.addMeal_heading{
+    color: purple;
+    text-align: center;
+    font-weight: bold;
+    padding:50px 0 50px 0;
+}
+#addMealForm{
+    text-align: left;
+}
 
+.addMeal_cancel {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+.addMeal_save {
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
 
+.panel-default>.panel-heading {
+    background-color: #d699ff;
+}
 
+/*Index2 css*/
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 
+}
+.index_img1, .index_img2, .index_img3 {
+  position: relative;
+  /*opacity: 0.9;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
+.index_img1 {
+  background-image: url("../img/food.jpg");
+  min-height: 300px;
+}
+
+.index_img2 {
+  background-image: url("../img/wnwn.png");
+  min-height: 400px;
+}
+
+.index_img3 {
+  background-image: url("../img/food.jpg");
+  min-height: 400px;
+}
+
+.index_caption {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: #000;
+}
+
+.index_caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  font-size: 3vw;
+  letter-spacing: 10px;
+  vertical-align: middle;
+}
+
+h3 {
+  text-transform: uppercase;
+  font: 30px "Lato", sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+.index_description{
+    color: #39393a;
+    background-color:white;
+    text-align:center;
+    text-align: justify;
+    text-align:center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .index_img1, .index_img2, .index_img3 {
+        background-attachment: scroll;
+    }
+}
+
+/* The Close Button */
+.close {
+    background-color: transparent;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* affiliated page*/
+#aff_partnerHeading {
+    padding-bottom: 10px;;
+}
+
+#aff_partner {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 10px;
+    position: fixed;
+    background:#caacef 
+}
+
+#aff_partner a:link {
+    text-decoration:none;
+    color: green;
+}
+#aff_partner a:visited {
+    text-decoration:none;
+    color: black;
+}
+#aff_partner a:hover{
+    text-decoration:none;
+    color: mediumvioletred;
+}
+
+#aff_section1, #aff_section2, #aff_section3 {
+    padding-top:50px;
+    height: 100vh;
+    background-color: #fff987;
+    text-align: center;
+}
+s
+#aff_section1 h5, #aff_section2 h5, #aff_section3 h5 {
+    padding-bottom: 5px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+#aff_section1 h3 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#aff_section2 {
+    background-color: #ffb296;
+}
+#aff_section3 {
+    background-color: #80d1f2;
+}
+
+#aff_section1 img {
+    width: 260px;
+}
+#aff_section2 img, #aff_section3 img {
+    height: 180px;
+}
+
+.aff_intro {
+    text-align: left;
+    text-indent: 2em;
+}
