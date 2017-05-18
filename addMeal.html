@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>WNWN :: Add a Meal</title>
+    <title>WNWN :: Add a Meal</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -11,38 +12,68 @@
     <script src="bootstrap/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-        var row_num = 1;
+        var row_num = 0;
+
+        // Click on a close button to hide the current list item
+        function close(){
+            var close = document.getElementsByClassName("close");
+            var i;
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function () {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                }
+            }
+        }
+
         function addMoreInput() {
+            // Create a "close" button and append it to each list item
             var inputArea = document.getElementById("ingredientNameInputGroup");
+            var inputValue = document.getElementById("in").value; //
             var div = document.createElement("div");
+            div.setAttribute("class", "input-group ingredient");
             var br = document.createElement("br");
-            div.className = "form-group";
+
             var input = document.createElement("input");
             input.setAttribute("type", "text");
             input.setAttribute("class", "form-control");
             row_num++;
-            input.setAttribute("placeholder", "Enter your Ingredient " + row_num)
-            input.setAttribute("name", "in"+row_num);
-            if(row_num > 10)
-                alert("We are sorry! You can only add maximum 10 ingredients")
+            input.setAttribute("name", "in" + row_num);
+            input.setAttribute("value", inputValue);
+            //input.setAttribute("id", "ingredient");
+            var span = document.createElement("span");
+            span.setAttribute("class", "input-group-btn");
+            var button = document.createElement("button");
+            button.setAttribute("class", "btn btn-danger btn-remove remove");
+            button.setAttribute("type", "button");
+            button.setAttribute("onclick", "close()");
+            var span2 = document.createElement("span");
+            span2.setAttribute("class", "glyphicon glyphicon-minus");
+
+            if (row_num > 10)
+                alert("Sorry! You can only add maximum 10 ingredients")
             else {
+                button.appendChild(span2);
+                span.appendChild(button);
                 div.appendChild(input);
+                div.appendChild(span);
                 inputArea.appendChild(div);
             }
-            
-            //div.appendChild(br);
-            
-
+            document.getElementById("in").value = "";
+            div.appendChild(br);
         }
-  
+
+
+
+
         function egg() {
-            var ingredient = document.getElementById("in1").value;
+            var ingredient = document.getElementById("in").value;
             var esterEgg = document.getElementById("addMeal_esterEgg");
             if (ingredient === "egg") {
                 esterEgg.setAttribute("src", "img/esterEgg.png");
                 esterEgg.setAttribute("onclick", "disableEgg()");
             }
-            if (ingredient === "tomato")  {
+            if (ingredient === "tomato") {
                 esterEgg.setAttribute("src", "img/wnwn1.png");
                 esterEgg.setAttribute("onclick", "disableEgg()");
             }
@@ -53,12 +84,12 @@
             esterEgg.setAttribute("src", "");
         }
     </script>
-    
+
 </head>
 
 <body class="addMeal_body">
     <!--Navigation Bar-->
-	<nav class="navbar navbar-inverse" style="background: #b998f2">
+    <nav class="navbar navbar-inverse" style="background: #b998f2">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -70,45 +101,59 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                <li class="active"><a href="home.html">Home</a></li>
-                
-                <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                <li><a href="planner.html"><span class="glyphicon glyphicon-calendar"></span> Meal Planner</a></li>
-                <li><a href="achievement.html"><span class="glyphicon glyphicon-queen"></span> Achievements</a></li>
-                
+                    <li class="active"><a href="home.html">Home</a></li>
+
+                    <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                    <li><a href="planner.html"><span class="glyphicon glyphicon-calendar"></span> Meal Planner</a></li>
+                    <li><a href="achievement.html"><span class="glyphicon glyphicon-queen"></span> Achievements</a></li>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+                    <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-	
+
     <!-- TITLE -->
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-xs-12 title">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 title">
                 <p class="addMeal_heading">New Meal</p>
             </div>
         </div>
         <form method="post">
-            
+
             <div class="form-group">
                 <label for="dishname">Dish Name:</label>
                 <input type="text" class="form-control" placeholder="Dish Name" name="dishname" id="dishname" list="recipeList">
                 <datalist id="recipeList" name="recipeList">
-                    <option value=""></option> <!--put reicipe id in value-->
+                    <option value=""></option>
+                    <!--put reicipe id in value-->
                 </datalist>
             </div>
 
             <div class="form-group" id="ingredientNameInputGroup">
                 <label for="addingredient">Ingredient<img id="addMeal_esterEgg"></label>
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Enter your Ingredient 1" name="in1"  onkeyup="egg()" id="in1">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign"  onclick="addMoreInput()"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter your Ingredient" name="in" onkeyup="egg()" id="in">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success btn-add" onclick="addMoreInput()" type="button">
+                                <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                    <!--<span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign"  onclick="addMoreInput()"></i></span>-->
+
+                    <!--<div id="myDIV" class="header">
+                        <input type="text" class="form-control" id="myInput" onkeyup="egg()" placeholder="Ingredients..."><span onclick="newElement()" class="btn addBtn">Add</span></input>
+                    </div>
+
+                    <ul id="myUL">
+                    </ul>-->
+
                 </div>
                 <br/>
-                
+
             </div>
 
             <div class="form-group">
@@ -118,11 +163,12 @@
             <input type="hidden" name="ingredient" value="">
             <br/>
             <div>
-            <button type="submit" class="btn btn-default btn-block ">Save</button>
-            <a href="planner2.html" class="btn btn-warning addMeal_cancel btn-block"  role="button">Cancel</a>
+                <button type="submit" class="btn btn-default btn-block ">Save</button>
+                <a href="planner2.html" class="btn btn-warning addMeal_cancel btn-block" role="button">Cancel</a>
             </div>
-        </form>           
+        </form>
     </div>
-  
+
 </body>
+
 </html>

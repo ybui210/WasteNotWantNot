@@ -1,13 +1,14 @@
-.glyphicon {
+.glyphicon-plus-sign{
 	font-size: 30px;
 	position: center;
 	color: #b998f2;
 }
 
+/*
 .glyphicon-calendar {
 	font-size: 20px;
 }
-
+*/
 .date_selection {
 	height: 20px;
 }
