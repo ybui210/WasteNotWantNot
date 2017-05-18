@@ -320,6 +320,7 @@ h3 {
 #aff_section1, #aff_section2, #aff_section3 {
     padding-top:50px;
     height: 100vh;
+    width: 100%;
     background-color: #fff987;
     text-align: center;
 }
@@ -348,6 +349,7 @@ s
 }
 #aff_section2 img, #aff_section3 img {
     height: 180px;
+    width: 180px;
 }
 
 .aff_intro {
