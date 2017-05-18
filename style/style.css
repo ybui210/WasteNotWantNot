@@ -202,17 +202,12 @@ body{
 }
 .index_img1 {
   background-image: url("../img/food.jpg");
-  min-height: 300px;
+  min-height: 250px;
 }
 
 .index_img2 {
   background-image: url("../img/wnwn.png");
-  min-height: 400px;
-}
-
-.index_img3 {
-  background-image: url("../img/food.jpg");
-  min-height: 400px;
+  min-height: 250px;
 }
 
 .index_caption {
