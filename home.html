@@ -10,12 +10,13 @@
 	<script src="bootstrap/bootstrap.min.js" type="text/javascript"></script>
     <script>
         function MyMove() {
-            var height = 0;
+            
+			var height = 0;
             var width = 0;
             var button = document.getElementById("clickme");
             var interval = setInterval(MoveAround, 10);
             function MoveAround() {
-                if (height == screen.height || width == screen.width) {
+                if (height == screen.innerHeight || width == screen.innerWidth) {
                     clearInterval(interval);
                 } else {
                     height--;
@@ -24,12 +25,9 @@
                     button.style.left = width + 'px'; 
                 }
             } 
-
+			
         }
-
     </script>
-
-<title>WasteNot WantNot</title>
 </head>
 
 <body class="container">
@@ -71,9 +69,9 @@
             </div>
         </div>
     </div>
+	<!-- style="visibility: hidden;" -->
     <div id="home_easterEgg1">
-        <img src="img/leaficon.png" alt="Hi" width= "25" height="25" id="home_mini_img" class="home_mini_img"/>
-		<img  onclick="MyMove()" id="clickme"></span>
+        <p class="glyphicon glyphicon-leaf home_glyphicon home_easterEgg_icon" onclick="MyMove()" id="clickme"></p>
     </div>
 </body>
 </html>
