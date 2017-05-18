@@ -270,3 +270,23 @@ h3 {
     cursor: pointer;
 }
 
+/*edit meal */
+.editMeal_heading {
+    text-transform: uppercase;
+    font: 30px "Lato", sans-serif;
+    color: #470daa;
+    text-align: center;
+}
+
+#editMeal_dishname {
+    color: white; 
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.editMeal_thead {
+    text-align: center;
+    font-color: #470daa;
+}

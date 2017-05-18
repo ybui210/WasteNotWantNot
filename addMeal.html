@@ -35,6 +35,23 @@
 
         }
   
+        function egg() {
+            var ingredient = document.getElementById("in1").value;
+            var esterEgg = document.getElementById("addMeal_esterEgg");
+            if (ingredient === "egg") {
+                esterEgg.setAttribute("src", "img/esterEgg.png");
+                esterEgg.setAttribute("onclick", "disableEgg()");
+            }
+            if (ingredient === "tomato")  {
+                esterEgg.setAttribute("src", "img/wnwn1.png");
+                esterEgg.setAttribute("onclick", "disableEgg()");
+            }
+        }
+
+        function disableEgg() {
+            var esterEgg = document.getElementById("addMeal_esterEgg");
+            esterEgg.setAttribute("src", "");
+        }
     </script>
     
 </head>
@@ -68,14 +85,14 @@
     </nav>
 	
     <!-- TITLE -->
-    <div id = "title" class = "container">
+    <div class = "container">
         <div class = "row">
             <div class = "col-xs-12 title">
                 <p class="addMeal_heading">New Meal</p>
             </div>
         </div>
-
         <form method="post">
+            
             <div class="form-group">
                 <label for="dishname">Dish Name:</label>
                 <input type="text" class="form-control" placeholder="Dish Name" name="dishname" id="dishname" list="recipeList">
@@ -85,10 +102,10 @@
             </div>
 
             <div class="form-group" id="ingredientNameInputGroup">
-                <label for="addingredient">Ingredient</label>
+                <label for="addingredient">Ingredient<img id="addMeal_esterEgg"></label>
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Enter your Ingredient 1" name="in1">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign" onclick="addMoreInput()"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter your Ingredient 1" name="in1"  onkeyup="egg()" id="in1">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign"  onclick="addMoreInput()"></i></span>
                 </div>
                 <br/>
                 
@@ -104,10 +121,7 @@
             <button type="submit" class="btn btn-default btn-block ">Save</button>
             <a href="planner2.html" class="btn btn-warning addMeal_cancel btn-block"  role="button">Cancel</a>
             </div>
-        </form>
-
-
-            
+        </form>           
     </div>
   
 </body>
