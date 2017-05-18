@@ -333,3 +333,8 @@ h3 {
     text-align: left;
     text-indent: 2em;
 }
+
+/* achievement.html */
+#chartContainer {
+    height: 200px;
+}
