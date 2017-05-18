@@ -15,7 +15,14 @@
         function addMoreInput() {
             var inputArea = document.getElementById("ingredientNameInputGroup");
             var div = document.createElement("div");
+            var input_group = document.createElement("div");
+            input_group.setAttribute("class", "input-group");
             var br = document.createElement("br");
+            var span = document.createElement("span");
+            span.setAttribute("class", "input-group-addon");
+            var icon = document.createElement("i");
+            icon.setAttribute("class", "glyphicon glyphicon-plus-sign");
+            icon.setAttribute("onclick", "addMoreInput()");
             div.className = "form-group";
             var input = document.createElement("input");
             input.setAttribute("type", "text");
@@ -26,7 +33,10 @@
             if(row_num > 10)
                 alert("We are sorry! You can only add maximum 10 ingredients")
             else {
-                div.appendChild(input);
+                span.appendChild(icon);
+                input_group.appendChild(input);
+                input_group.appendChild(span);
+                div.appendChild(input_group);
                 inputArea.appendChild(div);
             }
             
@@ -91,18 +101,18 @@
                 <p class="addMeal_heading">New Meal</p>
             </div>
         </div>
-        <form method="post">
+        <form method="post" action="addmeal.php">
             
             <div class="form-group">
                 <label for="dishname">Dish Name:</label>
                 <input type="text" class="form-control" placeholder="Dish Name" name="dishname" id="dishname" list="recipeList">
                 <datalist id="recipeList" name="recipeList">
-                    <option value=""></option> <!--put reicipe id in value-->
+                    <option value="dishname1">something here</option> <!--put reicipe id in value-->
                 </datalist>
             </div>
 
             <div class="form-group" id="ingredientNameInputGroup">
-                <label for="addingredient">Ingredient<img id="addMeal_esterEgg"></label>
+                <label for="addingredient">Ingredient  <img id="addMeal_esterEgg"></label>
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Enter your Ingredient 1" name="in1"  onkeyup="egg()" id="in1">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign"  onclick="addMoreInput()"></i></span>

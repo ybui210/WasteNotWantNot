@@ -56,22 +56,20 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                 <li class="active"><a href="home.html">Home</a></li>
-                
-                <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                <li><a href="planner.html"><span class="glyphicon glyphicon-calendar"></span> Meal Planner</a></li>
-                <li><a href="achievement.html"><span class="glyphicon glyphicon-queen"></span> Achievements</a></li>
-                
+                <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                <li><a href="planner.html"><span class="glyphicon glyphicon-calendar"></span>Meal Planner</a></li>
+                <li><a href="achievement.html"><span class="glyphicon glyphicon-queen"></span>Achievements</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                 <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+  </nav>
     
     <div class="well">
-    	<label for="MealDate" class="label">Meal Plan Date</label>
-		<input type="date" name="mealPD" id="MealDate">	
+    	<label for="MealDate">Meal Plan Date</label>
+		  <input type="date" name="mealPD" id="MealDate">	
     </div>
 
     <div class="container">
@@ -80,22 +78,22 @@
   			<div class="panel-heading"  onclick="disableHidden()" >Breakfast</div>
   			<div class="panel-body" name="recipe" id="Bmeal">
   				<div id="dishName">
-  				<a href="addMeal.html">
+  				  <a href="addMeal.html">
                 <span class="glyphicon glyphicon-plus-sign"></span>
-                </a>
-                </div>
-                <div id="bmealSelect" class="completeEaten">
-                <br/>
-               	<select class="select" id="bmealeatpercent">
+            </a>
+          </div>
+          <div id="bmealSelect" class="completeEaten">
+          <br/>
+          <select class="select" id="bmealeatpercent">
   					<option value="100">All</option>
   					<option value="75">Most</option>
   					<option value="50">Some</option>
   					<option value="25">A Little</option>
   					<option value="0">None</option>
-				</select> 			
-                </div>
-                <br/>
-                <div id="message"></div>
+				  </select> 			
+          </div>
+          <br/>
+      <div id="message"></div>
 			</div>
 		</div>
 		<div class="panel panel-default">
