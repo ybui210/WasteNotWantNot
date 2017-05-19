@@ -27,11 +27,11 @@
             var input = document.createElement("input");
             input.setAttribute("type", "text");
             input.setAttribute("class", "form-control");
-            row_num++;
+            ++row_num;
             input.setAttribute("placeholder", "Enter your Ingredient " + row_num)
             input.setAttribute("name", "in"+row_num);
             if(row_num > 10)
-                alert("We are sorry! You can only add maximum 10 ingredients")
+                alert("We are sorry! You can only add maximum 10 ingredients");
             else {
                 span.appendChild(icon);
                 input_group.appendChild(input);
@@ -61,6 +61,11 @@
         function disableEgg() {
             var esterEgg = document.getElementById("addMeal_esterEgg");
             esterEgg.setAttribute("src", "");
+        }
+
+        function passNumOfIngredient() {
+            document.getElementById("numOfIngredient").setAttribute("value", row_num);
+            alert(document.getElementById("numOfIngredient").value);
         }
     </script>
     
@@ -101,7 +106,7 @@
                 <p class="addMeal_heading">New Meal</p>
             </div>
         </div>
-        <form method="post" action="addmeal.php">
+        <form method="post" action="planner2.php">
             
             <div class="form-group">
                 <label for="dishname">Dish Name:</label>
@@ -115,7 +120,7 @@
                 <label for="addingredient">Ingredient  <img id="addMeal_esterEgg"></label>
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Enter your Ingredient 1" name="in1"  onkeyup="egg()" id="in1">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign"  onclick="addMoreInput()"></i></span>
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign"  onclick="addMoreInput();passNumOfIngredient()"></i></span>
                 </div>
                 <br/>
                 
@@ -125,7 +130,7 @@
                 <label for="numserve">Serve Amount</label>
                 <input class="form-control" name="serveAmount" type="number" min="1">
             </div>
-            <input type="hidden" name="ingredient" value="">
+            <input type="hidden" name="numOfIngredient" id="numOfIngredient">
             <br/>
             <div>
             <button type="submit" class="btn btn-default btn-block ">Save</button>
