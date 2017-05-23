@@ -1,4 +1,4 @@
-Group 18: Amanda Santamaria, Xiaoyu Ye, Lu She, Yi Liu, Yen Bui
+Group 18: Amanda Santamaria, Lu She, Xiaoyu Ye, Yi Liu, Yen Bui
 
 Waste Not Want Not (https://wnwn.herokuapp.com)
 
