@@ -187,13 +187,7 @@ table, th, td {
 }
 
 /*Index2 css*/
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
 
-}
 .index_img1, .index_img2, .index_img3 {
   position: relative;
   /*opacity: 0.9;*/
@@ -242,6 +236,7 @@ h3 {
 
 .index_description{
     color: #39393a;
+    font-size: 19px;
     background-color:white;
     text-align:center;
     text-align: justify;
@@ -380,10 +375,18 @@ s
 }
 
 /* Add some padding inside the card container */
-.container {
+/*.container {
     padding: 2px 16px;
-}
+}*/
 
 .about_img {
     border-radius: 5px 5px 0 0;
+}
+
+html, body{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
