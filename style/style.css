@@ -56,3 +56,332 @@ table, th, td {
 	width: 100%;
 }
 
+/* Button */
+#cancel button{
+    background: orange;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#save button{
+    background: #bf80ff;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#delete button{
+    background: #b30000;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#calender {
+    text-align: left;
+    padding-left: 30px;
+}
+/* Planner.html */
+#mainForm{
+    text-align: center;
+    font-weight: bold;
+    color: #470daa;
+}
+
+/* editMeal.html, addMeal.html */
+#editMealForm, #addMealForm, #achievementForm{
+    text-align:left;
+    font-weight: bold;
+    color: #470daa;
+}
+
+#mealPD {
+    border-radius: 5px;
+    border-color:  #470daa;
+    border: 1px solid #c4c4c4;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+}
+
+
+.label {
+    font-weight: bold;
+    color: #470daa;
+}
+
+/*home page css */
+
+.home_nav {
+    height: 45px;
+    border-left: 30px solid #4d1e89;
+    border-radius: 100px;
+    background: #caacef;
+    font-size: 20px;
+    font-family: bold;
+    text-align: left;
+    
+}
+
+.home_img {
+    display: block;
+    margin: auto;
+}
+
+.home_glyphicon {
+    font-size: 20px;
+    color: #4d1e89;
+}
+
+.glyphicon-star-empty {
+    font-size: 25px;
+}
+
+.home_button {
+    color: black;
+}
+
+.home_easterEgg1 {
+    position: fixed;
+	bottom: 0px;
+    left: 0px;
+}
+
+.home_easterEgg_icon {
+	color: green;
+}
+
+/* add meal style */
+
+.addMeal_body {
+    color: mediumpurple;
+}
+.addMeal_heading{
+    color: purple;
+    text-align: center;
+    font-weight: bold;
+    padding:50px 0 50px 0;
+}
+#addMealForm{
+    text-align: left;
+}
+
+.addMeal_cancel {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+.addMeal_save {
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+.panel-default>.panel-heading {
+    background-color: #d699ff;
+}
+
+/*Index2 css*/
+
+.index_img1, .index_img2, .index_img3 {
+  position: relative;
+  /*opacity: 0.9;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.index_img1 {
+  background-image: url("../img/food.jpg");
+  min-height: 250px;
+}
+
+.index_img2 {
+  background-image: url("../img/wnwn.png");
+  min-height: 250px;
+}
+
+.index_caption {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: #000;
+}
+
+.index_caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  font-size: 3vw;
+  letter-spacing: 10px;
+  vertical-align: middle;
+}
+
+h3 {
+  text-transform: uppercase;
+  font: 30px "Lato", sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+.index_description{
+    color: #39393a;
+    font-size: 19px;
+    background-color:white;
+    text-align:center;
+    text-align: justify;
+    text-align:center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .index_img1, .index_img2, .index_img3 {
+        background-attachment: scroll;
+    }
+}
+
+/* The Close Button */
+.close {
+    background-color: transparent;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*edit meal */
+.editMeal_heading {
+    text-transform: uppercase;
+    font: 30px "Lato", sans-serif;
+    color: #470daa;
+    text-align: center;
+}
+
+#editMeal_dishname {
+    color: white; 
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.editMeal_thead {
+    text-align: center;
+    font-color: #470daa;
+}
+
+/* affiliated page*/
+#aff_partnerHeading {
+    padding-bottom: 10px;;
+}
+
+#aff_partner {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 10px;
+    position: fixed;
+    background:#caacef 
+}
+
+#aff_partner a:link {
+    text-decoration:none;
+    color: green;
+}
+#aff_partner a:visited {
+    text-decoration:none;
+    color: black;
+}
+#aff_partner a:hover{
+    text-decoration:none;
+    color: mediumvioletred;
+}
+
+#aff_section1, #aff_section2, #aff_section3 {
+    padding-top:50px;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff987;
+    text-align: center;
+}
+s
+#aff_section1 h5, #aff_section2 h5, #aff_section3 h5 {
+    padding-bottom: 5px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+#aff_section1 h3 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#aff_section2 {
+    background-color: #ffb296;
+}
+#aff_section3 {
+    background-color: #80d1f2;
+}
+
+#aff_section1 img {
+    width: 260px;
+}
+#aff_section2 img, #aff_section3 img {
+    height: 180px;
+    width: 180px;
+}
+
+.aff_intro {
+    text-align: left;
+    text-indent: 2em;
+}
+
+/* achievement.html */
+#chartContainer {
+    height: 200px;
+}
+
+
+.panel-body {
+    font-family: sans-serif;
+    color: #d699ff;
+}
+
+.about_card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 15px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.about_card:hover {
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2);
+}
+
+.about_img {
+    border-radius: 5px 5px 0 0;
+}
+
+html, body{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
